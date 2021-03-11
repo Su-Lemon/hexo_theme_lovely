@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="<%- theme.cdn.gitalk.css %>">
+<script src="<%= theme.cdn.md5.js %>"></script>
+<div id="gitalk"></div>
+<script src="<%- theme.cdn.gitalk.js %>"></script>
+<script type="text/javascript">
+    // var gitalk = new Gitalk({
+    //   clientID: '<%- theme.gitalk.ClientID %>',
+    //   clientSecret: '<%- theme.gitalk.ClientSecret %>',
+    //   repo: '<%- theme.gitalk.repo %>',
+    //   owner: '<%- theme.gitalk.owner %>',
+    //   admin: '<%- theme.gitalk.admin %>',
+    //   id: '<%- theme.gitalk.id%>',
+    //   labels: '<%- theme.gitalk.labels %>'.split(',').filter(l => l),
+    // //   perPage: '<%- theme.gitalk.perPage %>',
+    //   pagerDirection: '<%- theme.gitalk.pagerDirection %>',
+    //   createIssueManually: '<%- theme.gitalk.createIssueManually %>',
+    //   distractionFreeMode: '<%- theme.gitalk.distractionFreeMode %>'
+    // })
+    var gitalk = new Gitalk({
+      clientID: '<%- theme.gitalk.ClientID %>',
+      clientSecret: '<%- theme.gitalk.ClientSecret %>',
+      repo: 'gittalk-comments',
+      owner: 'Su-Lemon',
+      admin: 'Su-Lemon',
+      id: md5(location.pathname),
+      labels: ['Gitalk'],
+      perPage: 15,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      distractionFreeMode: false
+    })
+    gitalk.render('gitalk')
+</script>
