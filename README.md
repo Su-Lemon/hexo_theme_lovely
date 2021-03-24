@@ -10,13 +10,13 @@ hexo_theme_lovely是以作者 [Nexmoe](https://github.com/nexmoe) 的主题 [hex
 - 养宠物配置
 - 鼠标单击特效
 
-![新增效果](https://raw.githubusercontent.com/Su-Lemon/sources/master/imgs/blog/20210226115452.jpg)
+![新增效果](https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog/20210226115452.jpg)
 
-![Latex公式支持](https://raw.githubusercontent.com/Su-Lemon/sources/master/imgs/blog/20210226115722.jpg)
+![Latex公式支持](https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog/20210226115722.jpg)
 
 ## 演示
 
-hexo_theme_lovely： [爱吃猫的小鱼干的Blog](https://su-lemon.github.io/blog/) 
+hexo_theme_lovely： [爱吃猫的小鱼干的Blog](https://su-lemon.gitee.io/) 
 
 ## 教程
 

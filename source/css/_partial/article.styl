@@ -1,16 +1,18 @@
 article {
 	color: #444;
-	font-family: microsoft yahei
+	font-family: 'microsoft yahei', 'Times New Roman', 'STHeiti';
 }
 
 article p {
-	line-height: 24px
+	line-height: 28px
+	font-family: 'microsoft yahei', 'Times New Roman', 'STHeiti';
+	font-size: 18px;
 }
 
 article code {
 	background-color: rgba(27,31,35,.05);
 	border-radius: 10px;
-	font-size: 85%;
+	font-size: 90%;
 	padding: .2em .4em;
 }
 
@@ -25,15 +27,17 @@ article code::-webkit-scrollbar-thumb {
 }
 
 article pre {
+	font-family: "Consolas", "Monaco";
+	font-size: 16px;
 	border-radius: $radius;
 	overflow: hidden;
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: $gutter  0;
-	padding: 15px;
+	// margin: $gutter  0;
+	// padding: 15px;
 	position: relative;
-	background: #282c34;
-	line-height: 1.3em;
+	// background: #282c34;
+	// line-height: 1.3em;
 }
 
 article pre::before {
@@ -194,6 +198,13 @@ article h4, article h5, article h6 {
 }
 
 article h4:before, article h5:before, article h6:before {
+	display: inline-block;
+	width: 1em;
+	content: '+';
+	color: #ff4e6a
+}
+
+article h3:before {
 	display: inline-block;
 	width: 1em;
 	content: '#';
@@ -421,6 +432,9 @@ article table tr:nth-child(2n) {
 article img, article canvas, article iframe, article video, article svg, article select, article textarea {
 	width: auto;
 	max-width: 100%
+	margin-left: auto; 
+    margin-right:auto; 
+    display:block;
 }
 
 details ul {

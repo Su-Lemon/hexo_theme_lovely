@@ -1,14 +1,14 @@
-avatar: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/imgs/blog_style/avatar0.png # 网站 Logo
+avatar: https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog_style/avatar0.png # 网站 Logo
 background: # 博客的背景
-  path: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/imgs/blog_style/background0.png
+  path: https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog_style/background0.png
   width: 1440
   height: 960
 postcover: # 文章默认头图
-  path: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/imgs/blog_style/postcover0.png
+  path: https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog_style/postcover0.png
   width: 1440
   height: 720
 favicon:
-  href: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/imgs/blog_style/favicon0.png # /favicon.ico # 网站图标
+  href: https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog_style/favicon0.png # /favicon.ico # 网站图标
   type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 function: # 功能开关，可选值（true,false）
@@ -53,6 +53,7 @@ menu:
     - /PY.html
 
 widgets:
+  - apps
   - search
   - social
   - category
@@ -81,8 +82,10 @@ social:
     - rgba(25, 23, 23, .15)
 
 site_verification: # 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
-  google:
-  baidu:
+  google: 
+    GitHub:  # GitHub Pages
+    Gitee:  # Gitee Pages
+  baidu: 
 
 analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
   google_site_id: #<ID>
@@ -155,12 +158,12 @@ widgetAchive: # 文章归档组件
   show_count: true  # 是否展示数量
 
 widgetLink: # 链接组件
-  - title: <title>
-    img : <img_path>
-    link : <url>
-  - title: <title>
-    img : <img_path>
-    link : <url>
+  # - title: <title>
+  #   img : <img_path>
+  #   link : <url>
+  # - title: <title>
+  #   img : <img_path>
+  #   link : <url>
 
 sidebar: ''
 
