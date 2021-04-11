@@ -9,7 +9,9 @@ function jsAutoVersionHelper(...args) {
         }
         if (!path.includes('?') && !path.endsWith('.js')) path += '.js';
         let url_suffix = "?v=" + new Date().getTime();
-        let url = this.url_for(path) + url_suffix;
+        // let url = this.url_for(path) + url_suffix;
+        let url = this.full_url_for(path) + url_suffix;
+
         return `${result}<script src="${url}"></script>`;
     }, '');
 }

@@ -9,7 +9,13 @@ function cssAutoVersionHelper(...args) {
         }
         if (!path.includes('?') && !path.endsWith('.css')) path += '.css';
         let url_suffix = "?v=" + new Date().getTime();
-        let url = this.url_for(path) + url_suffix;
+        // let url = this.url_for(path);
+        let url = this.full_url_for(path);
+
+        // let domain = url.split("/")[2];
+        // console.log(url.split("/"));
+        
+        url = url + url_suffix;
         return `${result}<link rel="stylesheet" href="${url}">`;
     }, '');
 }

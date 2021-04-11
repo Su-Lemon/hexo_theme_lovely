@@ -20,7 +20,8 @@ iconlib: # https://at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
 # 谷歌与百度搜索（站内搜素代替）
 search: https://cn.bing.com/search?q=site:su-lemon.github.io/blog # https://www.google.com/search?q={你的博客链接}
 
-cdn: # 这里可以修改站点使用的库的CDN
+# 这里可以修改站点使用的库的CDN
+cdn:
   disqusjs: 
     css: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.min.css
     js: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.min.js
@@ -30,14 +31,24 @@ cdn: # 这里可以修改站点使用的库的CDN
   valine:
     js: https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js
   copy: # https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js
-  search:
-    js: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/js/functions/search.js # 站内搜索
   jquery:
-    js: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/js/effects/jquery-3.1.1.min.js # 特效与站内搜索必需
-  md5:
-    js: https://cdn.jsdelivr.net/gh/Su-Lemon/sources/js/effects/md5.min.js
+    js: https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js  # 特效与站内搜索必需
   mathjax:
     js: https://cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+# 这里可以修改站点使用的自定义资源的路径（相对路径，要加载绝对路径，在对应的的调用位置删除 <%- url_for() %> ）
+sources:
+  search:  # 站内搜索
+    js: js/search.js
+  md5:
+    js: js/md5.min.js
+  effects:  # 特效
+    firework: 
+      js: js/firework.js
+    firework1: 
+      js: js/firework1.js
+  style:
+    css: css/blog.css
 
 menu:
   回到首页: 

@@ -19,9 +19,9 @@
         </a>
         <% } %>
     </div>
-    <!-- 站内搜索，需要引入jQuery -->
-    <script type="text/javascript" src="<%= theme.cdn.search.js %>"></script>
     <%- partial('_partial/sidebar') %>
+    <script type="text/javascript" src="<%= theme.cdn.jquery.js %>"></script>
+    <script type="text/javascript" src="<%- url_for() %><%= theme.sources.search.js %>"></script>
     <div class="nexmoe-copyright">
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
