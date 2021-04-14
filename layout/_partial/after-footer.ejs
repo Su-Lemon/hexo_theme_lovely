@@ -18,11 +18,11 @@
 	});
 </script>
 
+<!--  -->
 <script src="<%- full_url_for() %>lib/google-code-prettify/src/prettify.js"></script>
-
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('pre').addClass('prettyprint linenums');
+		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:scroll;');;
 		$('code').addClass('prettyprint');
 		prettyPrint();
 	})

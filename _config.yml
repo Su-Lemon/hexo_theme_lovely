@@ -35,6 +35,10 @@ cdn:
     js: //cdn.bootcss.com/jquery/3.2.1/jquery.min.js  # 特效与站内搜索必需
   mathjax:
     js: https://cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  font:
+    css: https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css  # 特殊字体
+  justifiedGallery:
+    css: //cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css
 
 # 这里可以修改站点使用的自定义资源的路径（相对路径，要加载绝对路径，在对应的的调用位置删除 <%- url_for() %> ）
 sources:

@@ -12,11 +12,12 @@
 <div class="nexmoe-widget-wrap">
     <div class="nexmoe-widget nexmoe-search" >
         <form id="search-form">
-            <label><input type="text" id="local-search-input" name="q" results="0" placeholder="站内搜索" class="input form-control" autocomplete="off" autocorrect="off"/></label>
-            <!-- 清空/重置搜索框 -->
-            <i class="fa fa-times" onclick="resetSearch()"></i>
+                <input type="text" id="local-search-input" name="q" results="0" placeholder="站内搜索" class="input form-control" autocomplete="off" autocorrect="off"/>
+                <!-- 清空/重置搜索框 -->
+                <i class="fa fa-times" onclick="resetSearch()"></i>            
         </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>没有任何发现喵</p> <!-- 无匹配时显示，注意在 CSS 中设置默认隐藏 -->
     </div>
-    <div id="local-search-result"></div> <!-- 搜索结果区 -->
-    <!-- <p class='no-result'></p> 无匹配时显示，注意在 CSS 中设置默认隐藏 -->
+    
 </div>

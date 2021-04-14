@@ -10,9 +10,9 @@ hexo_theme_lovely是以作者 [Nexmoe](https://github.com/nexmoe) 的主题 [hex
 - 养宠物配置
 - 鼠标单击特效
 
-![新增效果](https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog/20210226115452.jpg)
+![站内搜索](https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog/20210414213450.jpg)
 
-![Latex公式支持](https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog/20210226115722.jpg)
+![特效与Latex公式支持](https://gitee.com/Su-Lemon/sources/raw/master/imgs/blog/20210226115722.jpg)
 
 ## 演示
 

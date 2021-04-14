@@ -106,7 +106,7 @@ inputArea.onkeydown = function(){ if(event.keyCode==13) return false}
 // 无搜索结果
 $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
     if (!$(e.target).text()) {
-        $(".no-result").show(200); 
+        $(".no-result").show(); 
     } else {
         $(".no-result").hide();
     }

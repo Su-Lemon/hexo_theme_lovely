@@ -123,46 +123,49 @@ body {
         // }
     }
     /*搜索框*/
+    // .input {
+    //     border: none!important;
+    //     background-color: transparent;
+    //     padding: 20px;
+    //     box-sizing: border-box;
+    //     outline: none;
+    // }
     .input {
-        border: none!important;
+        width: 75%;
+        height: 16px;
+        margin-top: 1px;
+        margin-left: 1px;
+        padding: 18px;
+        font-family: inherit;
+        border: 2px solid transparent;
+        border-bottom: 2px solid #d3d3d3;
+        border-radius: 2px;
+        opacity: 0.65;
+        background: none;
         background-color: transparent;
-        padding: 20px;
         box-sizing: border-box;
         outline: none;
     }
-    // .search {
-    //     width: 68%;
-    //     height: 18px;
-    //     margin-top: 1px;
-    //     padding: 0;
-    //     font-family: inherit;
-    //     border: 2px solid transparent;
-    //     border-bottom: 2px solid #d3d3d3;
-    //     border-radius: 2px;
-    //     opacity: 0.65;
-    //     background: none;
-    // }
-    // .search:hover {
-    //     border: 2px solid #d3d3d3;
-    //     opacity: 1;
-    //     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    // }
+    .input:hover {
+        border: 2px solid #d3d3d3;
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
     /*搜索重置按钮*/
     #search-form .fa-times {
         display: none;
-        padding: 1px 0.7em;
-        // padding: 100px 10px;
+        padding: 0.2em 0.7em;;
+        // padding: 10px 10px;
         box-shadow: 0 0 3px rgba(0,0,0,0.15);
         cursor: pointer;
-        color: #808080;
+        color: #ff4e6a;
     }
     #search-form .fa-times:active {
         background: #d3d3d3;
     }
     #search-form .fa-times:hover {
         zoom: 1.1;
-        padding: 1px 0.6em;
-        // padding: 1px 0px 1px 160px;
+        padding: 0.2 0.6em;
         border: 1px solid #d3d3d3;
         box-shadow: 0 0 6px rgba(0,0,0,0.25);
     }
@@ -174,9 +177,17 @@ body {
         text-align: left;
         word-break: break-all;
     }
-    #local-search-result ul.search-result-list li:hover {
+     #local-search-result ul{
+        padding: 0em 0.5em 0em 0.5em;
+        list-style-type: none;
+    }
+    #local-search-result ul li{
+        white-space:normal;
+    }
+    #local-search-result ul .search-result-list li:hover {
         font-weight: normal;
     }
+
     /*单条搜索结果*/
     #local-search-result li {
         margin: 0.5em auto;
@@ -188,9 +199,11 @@ body {
     }
     /*匹配的标题*/
     #local-search-result a.search-result-title {
+        padding: 2px 0;
         line-height: 1.2;
         font-weight: bold;
-        color: #708090;
+        // color: #708090;
+        color: #E8701F;
     }
     /*搜索预览段落*/
     #local-search-result p.search-result {
@@ -212,11 +225,11 @@ body {
     /*无匹配搜索结果时显示*/
     p.no-result {
         display: none;
-        margin: 2em 0 2em 6%;
+        margin: 1em 0 1em 6%;
         padding-bottom: 0.5em;
         text-align: left;
         color: #808080;
-        font-family: font-serif serif;
+        font-family: serif;
         border-bottom: 2px solid #d3d3d3;
     }
     .nexmoe-social {
